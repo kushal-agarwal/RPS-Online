@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">   
+   <script src="https://www.gstatic.com/firebasejs/7.21.1/firebase.js"></script> 
+    <title>Rock Paper Scissor</title>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Baumans" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+        <link rel="stylesheet"href="index.css"></link>
+        <script type="text/javascript"src="index.js"></script>
+    </head>
+    <body>
+    <h5>Enter Your Move</h5>
+  <p id="result"></p>
+<div id="info"><span id="name1" class="atten">Waiting</span> <span id="vs">VS</span> <span id="name2">Waiting</span></div>            
+    <div id="form">
+    <h3>Rock Paper Scissor <sup>-Kushal</sup> </h3>
+    <form>
+        <div class="grou">      
+            <input type="tex" id="name" placeholder="Enter your name" autocomplete="off" required>
+           
+        </div>
+        <div class="grou">      
+            <input type="tex" id="room" placeholder="enter your room name" autocomplete ="off" required>
+            
+        </div>
+        <h6>Available Rooms:</h6>
+        <ul id="alist">
+        </ul>
+        <div id="b">
+        <div id="cbtn" onclick="create()" style="background-color:#93b8d5;" class="waves-effect waves-light btn-large">Create Room</div>
+        <div id="jbtn" onclick="join()" style="background-color:#93b8d5;" class="waves-effect waves-light btn-large">Join Room</div>
+        </div>
+        </form>
+    </div>
+   <div id="moves">
+ <div onclick="rock()" id="rock" class="waves-effect waves-light btn-large">✊</div>      
+ <div onclick="paper()" id="paper" class="waves-effect waves-light btn-large">✋</div>
+ <div onclick="scissor()" id ="scissor" class="waves-effect waves-light btn-large">✂️</div>      
+   </div>
+<div id="moves1">
+ <div onclick="rock1()" id="rock" class="waves-effect waves-light btn-large">✊</div>      
+ <div onclick="paper1()" id="paper" class="waves-effect waves-light btn-large">✋</div>
+ <div onclick="scissor1()" id ="scissor" class="waves-effect waves-light btn-large">✂️</div>    
+   </div>
+</body>
+</html>

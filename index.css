@@ -1,0 +1,227 @@
+body {
+    max-height: 100vh;
+    max-width: 100vw;
+    overflow: hidden;
+    margin: 0;
+    padding:0;
+    background-color: #537895; 
+    background:#effeff;    
+}
+a,#rock,#paper,#scissor{
+    margin-top: 20px; margin-bottom: 20px;
+    margin-left:30px;
+    transform: translateY(-80px);
+    font-family: Baumans;
+}
+p{
+    font-family: Baumans;
+    text-align:center;
+    padding-top:10%;
+    justify-item:center;
+    font-size:30px;
+    overflow-y:scroll;
+    color:tomato;
+}
+sup {
+    font-size: 10px;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+h3{
+    font-family: Baumans;
+    font-weight: bold;
+    color: #000;
+    margin-left:30px;
+}
+#form {
+    height: 300px;
+    width: 300px;
+    margin: auto;
+    text-align: center;
+}
+
+#b {
+    text-align: center;
+    padding-top: 30px;
+}
+
+
+.slide {
+    animation: 1s slide forwards;
+}
+.slide2 {
+    animation: 1s slide2 forwards;
+}
+
+.grou{ 
+  position:relative; 
+  margin-bottom:45px; 
+  margin: 20px;
+  transform: translateY(-30px);
+  opacity: 0;
+}
+
+input{
+  font-size:18px;
+  padding:10px 10px 10px 5px;
+  width: 250px;
+  border:none;
+  color:#537895;
+  border-radius:5px;
+  text-align:center;
+  font-family: Baumans;
+  margin-left:20px;
+  box-shadow:0px 2px 2px rgba(0,0,0,0.2);
+  outline:none;
+}
+
+@keyframes slide {
+    from {
+        transform: translateX(-100vw);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+@keyframes slide2 {
+    from {
+        transform: translateX(0);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(100vw);
+        opacity: 1;
+        display: none;
+    }
+}
+
+.remove {
+    animation: 1s remove forwards;
+}
+@keyframes remove {
+    to { 
+        transform: translateY(30px);
+        opacity: 0;
+    }
+}
+.showem {
+    animation: 1s showem forwards;
+}
+
+@keyframes showem {
+    to {
+        transform: translateY(30px);
+        opacity: 1;
+    }
+}
+
+h6 {
+    font-size: 2rem;
+    color: #93b8d5;
+    font-family: Baumans;
+    font-weight: bold;
+    transform: translateY(-30px);
+    opacity: 0;
+    display: none;
+}
+#alist {
+    list-style: none;
+    transform: translateY(-30px);
+    opacity: 0;
+    display: none;
+    overflow-y:scroll;
+    height:200px;
+}
+#alist li {
+    font-size: 1.5rem;
+    color: white;
+    font-family: Baumans;
+    padding: 10px;
+    margin: 10px;
+    display: inline-block;
+    font-weight: bold;
+}
+#moves,#moves1{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    visibility:hidden;
+    display:flex;
+}
+
+@keyframes hide{
+    from{
+        opacity:1;
+    }
+    to{
+        opacity:0;
+        
+    }
+}
+#result{
+    width:100vw;
+    height:150px;    
+    background:#ececec;
+    box-shadow:0px 2px 2px rgba(0,0,0,0.2);
+    border-radius:5px;
+    position:absolute;
+    left:0px;
+    top:calc(80% - 150px);
+    visibility:hidden;
+}
+
+@keyframes pop{
+    0%{transform:scale(0.6);}
+    34%{transform:scale(1);}
+    66%{transform:scale(0.84);}
+    100%{transform:scale(1);}    
+}
+
+#info {
+    width: 100vw;
+    padding: 20px;
+    position: absolute;
+    color: white;
+    font-family: Baumans;
+    font-weight: bold;
+    text-align: center;
+    visibility:hidden;
+}
+#vs {
+    display: block;
+    font-size: 1rem;
+    padding: 10px;
+    color:#000;    
+}
+h5{
+    opacity:0;
+    text-align:center;
+    font-family: Baumans;
+    font-size:30px;    
+    position:absolute;
+    bottom:20%;left:0;right:0;
+    color:tomato;
+}
+#name2 ,#name1{
+    display: block;
+    font-size: 2rem;
+    padding: 10px;
+    background-color:lightgreen;
+    border-radius:5px;
+    animation:shake .7s infinite alternate;
+}
+@keyframes shown{    
+    to{opacity:1;}
+}
+@keyframes shake{    
+    to{transform:scale(0.7);}
+}
+
+#jbtn{
+    margin:20px 0px;
+}
