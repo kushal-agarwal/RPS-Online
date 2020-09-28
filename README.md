@@ -11,7 +11,6 @@
     <li>Play Online</li>
     <li>You can create your own room</li>
     <li>Join room</li>
-    
     </ol>
    <h3> Languages used </h3>
    <ul>
