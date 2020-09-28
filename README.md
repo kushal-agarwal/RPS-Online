@@ -28,6 +28,8 @@
    <br>
    <img src="screenshots/4.png"></img>
    <br>
+   <img src="screenshots/6.png"></img>
+   <br>
    <img src="screenshots/5.png"></img>
 </body>
 </html>
